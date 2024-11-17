@@ -15,7 +15,7 @@ const addDeck = async (req, res) => {
         .then(user => {
             user.decks.push(newDeck)
             user.save()
-            res.json(user)
+            res.json(newDeck._id)
         })
         .catch(err => res.status(500).send(err))
 }
