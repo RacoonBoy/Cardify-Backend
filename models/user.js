@@ -4,8 +4,7 @@ const Schema = mongoose.Schema
 const UserSchema = new Schema({
     displayName:{
         type: String,
-        required: true,
-        minLength:[6, 'Display name must be at least 6 characters long.']
+        required: true
     },username:{
         type: String,
         required: true,
